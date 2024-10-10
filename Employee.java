@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public abstract class Employee {
     
     protected double empSalary;
@@ -37,7 +39,12 @@ public abstract class Employee {
 
     }
 
-    public abstract double giveRaise(double raisePercent);
+    public abstract void giveRaise(double raisePercent);
+
+
+
+
+    
 
     
 }

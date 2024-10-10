@@ -10,18 +10,15 @@ public class SoftwareEngineer extends Employee {
         empCash = 0; 
     }
 
-    public double giveRaise(double raisePercent){
+    public void giveRaise(double raisePercent){
 
-        double newSalary = (empSalary / 26) * raisePercent;
-
-        return newSalary;
+        empSalary += (empSalary * raisePercent / 100);
 
     }
 
-    public interface Hourly {
     
-        
-    }
+
+
 
 
 
