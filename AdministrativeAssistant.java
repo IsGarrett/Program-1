@@ -1,8 +1,8 @@
 public class AdministrativeAssistant extends Employee implements Hourly {
     
-    double hoursPerWeek;
+    int hoursPerWeek;
     
-    public AdministrativeAssistant(double empSalary, String empName, double hoursPerWeek){
+    public AdministrativeAssistant(double empSalary, String empName, int hoursPerWeek){
 
         super(empSalary, hoursPerWeek, empName);
 
@@ -13,13 +13,13 @@ public class AdministrativeAssistant extends Employee implements Hourly {
 
     }
 
-    public double getHoursPerWeek(double hoursPerWeek) {
+    public int getHoursWorked() {
 
         return hoursPerWeek;
 
     }
 
-    public void setHoursPerWeek(double hoursPerWeek){
+    public void setHoursWorked(int hoursPerWeek){
 
         this.hoursPerWeek = hoursPerWeek;
     
@@ -33,28 +33,25 @@ public class AdministrativeAssistant extends Employee implements Hourly {
 
     public double getPaid() {
 
-        double getPaid = getHoursPerWeek(hoursPerWeek) * empSalary; 
+        double getPaid = hoursPerWeek * empSalary; 
 
         return getPaid;
 
     }
 
-    public String toString() {
+    public String getName() {
 
         return empName;
     }
 
-    @Override
-    public int getHoursWorked() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getHoursWorked'");
-    }
+    
 
-    @Override
-    public void setHoursWorked(int hours) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setHoursWorked'");
-    }
+    
+
+    
+    
+
+    
 
 
 

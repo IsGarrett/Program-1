@@ -6,4 +6,6 @@ public interface Hourly {
     
     void giveRaise(double amount);
 
+    String getName();
+
 }
