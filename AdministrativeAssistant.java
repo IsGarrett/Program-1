@@ -2,9 +2,9 @@ public class AdministrativeAssistant extends Employee implements Hourly {
     
     double hoursPerWeek;
     
-    public AdministrativeAssistant(double empSalary, double empCash, String empName, double hoursPerWeek){
+    public AdministrativeAssistant(double empSalary, String empName, double hoursPerWeek){
 
-        super(empSalary, empCash, empName);
+        super(empSalary, hoursPerWeek, empName);
 
         this.empSalary = (empSalary / 26) / 80;
         this.empCash = empCash;
@@ -39,7 +39,24 @@ public class AdministrativeAssistant extends Employee implements Hourly {
 
     }
 
-    
+    public String toString() {
+
+        return empName;
+    }
+
+    @Override
+    public int getHoursWorked() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getHoursWorked'");
+    }
+
+    @Override
+    public void setHoursWorked(int hours) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setHoursWorked'");
+    }
+
+
 
 
 

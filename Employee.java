@@ -15,9 +15,9 @@ public abstract class Employee {
 
     }
 
-    public void getName(){
+    public String getName(){
 
-        String getName = empName;
+        return empName;
 
     }
 
@@ -38,6 +38,10 @@ public abstract class Employee {
         return getPaid;
 
     }
+
+    /*public String toString(){
+        return empName;
+    }*/
 
     public abstract void giveRaise(double raisePercent);
 
